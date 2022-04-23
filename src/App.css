@@ -1,0 +1,105 @@
+
+body{
+   width: 100%;
+   overflow-x: hidden;
+}
+.circle{
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   overflow: hidden;
+   background:rgba(170, 170, 170, 0.63);
+   border-radius: 50%;
+   top: -80px;
+   right: -80px;
+   z-index: -1;
+}
+.nudget{
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   background:rgba(255, 127, 7, 0.856);
+   border-radius: 50%;
+   transform: translate(700%,-490%);
+   /* right: -80px; */
+   z-index: -1;
+}
+.second{
+   margin-top: 5px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 1rem;
+position: absolute;
+content:"Who I'm ?";
+color: crimson;
+z-index: 2;
+top: 30px;
+left: 46%;
+}
+
+.nudget:after{
+   position: absolute;
+border-radius: 39%;
+content: " ";
+z-index: 1;
+left: 34px;
+top: -15%;
+width: 20px;
+height: 14px;
+background-color: rgb(121 4 4);
+}
+.about{
+   position: relative;
+}
+.who{
+margin-top: 5px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 1rem;
+position: absolute;
+content:"Who I'm ?";
+color: crimson;
+z-index: 2;
+top: 30px;
+left: 46%;
+}
+.second::before{
+   
+content: " ";
+position: absolute;
+z-index: 2;
+width: 55%;
+height: 2px;
+background-color: #aaa;
+top: 16px;
+left: -65%;
+}
+.who::before{
+content: " ";
+position: absolute;
+z-index: 2;
+width: 55%;
+height: 2px;
+background-color: gray;
+top: 20px;
+left: -65%;
+}
+.second::after{
+content: " ";
+position: absolute;
+z-index: 2;
+width: 55%;
+height: 2px;
+background-color: #aaa;
+top: 16px;
+left: 104%;
+}
+.who:after{
+content: " ";
+position: absolute;
+z-index: 2;
+width: 55%;
+height: 2px;
+background-color: gray;
+top: 20px;
+left: 104%;
+}
+
